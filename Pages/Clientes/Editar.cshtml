@@ -1,0 +1,67 @@
+@page
+@model CRUD_Materiales.Pages.Clientes.EditarModel
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto rounded border p-4">
+        <h2 class="text-center mb-5">Editar Cliente</h2>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>@Model.ErrorMessage</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+            </div>
+        }
+
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">ID</label>
+                <input class="form-control-plaintext" readonly asp-for="Id" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input class="form-control" asp-for="Primernombre" />
+                <span class="text-danger" asp-validation-for="Primernombre"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Apellido</label>
+                <input class="form-control" asp-for="Apellidos" />
+                <span class="text-danger" asp-validation-for="Apellidos"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" asp-for="Email" />
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Teléfono</label>
+                <input class="form-control" asp-for="Telefono" />
+                <span class="text-danger" asp-validation-for="Telefono"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Dirección</label>
+                <input class="form-control" asp-for="Direccion" />
+                <span class="text-danger" asp-validation-for="Direccion"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Notas</label>
+                <input class="form-control" asp-for="Notas" />
+                <span class="text-danger" asp-validation-for="Notas"></span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a class="btn btn-secondary" href="/Clientes/Index">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
