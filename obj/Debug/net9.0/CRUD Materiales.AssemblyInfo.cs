@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD Materiales")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cffc57d2ce02a1672e8e61e79e216f69546ff456")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b3564e13c28d555eaa93059ff21cf161c01694e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD Materiales")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD Materiales")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

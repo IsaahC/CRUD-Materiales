@@ -46,7 +46,7 @@ namespace CRUD_Materiales.Pages.Clientes
             //crear nuevo cliente
             try
             {
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=ArqCrud;Trusted_Connection=True;TrustServerCertificate=True;";
+            string connectionString = "Server=DESKTOP-LOAE6OF;Database=ArqCrud;Trusted_Connection=True;TrustServerCertificate=True;";
             using (SqlConnection connection = new SqlConnection(connectionString)){
                 connection.Open();
 

@@ -1,7 +1,7 @@
 @page
-@model IndexModel
+@model LoginModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio de Sesión";
 }
 
 <div class="container-fluid">
@@ -15,10 +15,17 @@
         <!-- Sección de inicio de sesión -->
         <div class="col-md-4 login-container">
             <h2 class="mb-3">Iniciar Sesión</h2>
+
+            <!-- Mensaje de error -->
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger">@Model.ErrorMessage</div>
+            }
+
             <form method="post">
                 <div class="mb-3">
-                    <label for="nombreUsuario" class="form-label">Nombre de Usuario</label>
-                    <input type="text" class="form-control" id="nombreUsuario" name="NombreUsuario" value="@Model.NombreUsuario" />
+                    <label for="Correo" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="Correo" name="NombreUsuario" value="@Model.NombreUsuario" />
                 </div>
                 <div class="mb-3">
                     <label for="contrasena" class="form-label">Contraseña</label>
@@ -32,9 +39,10 @@
 
 <footer>
     <div class="logo-container">
-        <img src="/Imagenes/logo.png">
+        <img src="/Images/logo.jpg" />
     </div>
 </footer>
+
 
 <style>
     body {
@@ -48,12 +56,12 @@
         min-height: 100vh;
     }
 
-    /* Agregar una imagen de fondo con opacidad */
+   
     .container-fluid {
         flex: 1;
         padding: 2rem;
         position: relative;
-        background: url('/Imagenes/fondo_construccion.jpg') no-repeat center center fixed;
+        background: url('/Images/logo.jpg') no-repeat center center fixed;
         background-size: cover;
         background-attachment: fixed;
         filter: brightness(60%); /* Opacidad suave para la imagen */

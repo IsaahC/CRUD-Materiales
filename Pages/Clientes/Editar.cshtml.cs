@@ -35,7 +35,7 @@ namespace CRUD_Materiales.Pages.Clientes
         {
             try
             {
-                string connectionString = "Server=localhost\\SQLEXPRESS;Database=ArqCrud;Trusted_Connection=True;TrustServerCertificate=True;";
+                string connectionString = "Server=localhost;Database=ArqCrud;Trusted_Connection=True;TrustServerCertificate=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
@@ -80,7 +80,7 @@ namespace CRUD_Materiales.Pages.Clientes
 
             try
             {
-                string connectionString = "Server=localhost\\SQLEXPRESS;Database=ArqCrud;Trusted_Connection=True;TrustServerCertificate=True;";
+                string connectionString = "Server=DESKTOP-LOAE6OF;Database=ArqCrud;Trusted_Connection=True;TrustServerCertificate=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();

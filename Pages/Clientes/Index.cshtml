@@ -5,11 +5,8 @@
 }
 
 <div class="container">
-    <h2 class="text-center mb-4">
-        <i class="fas fa-hard-hat"></i> Lista de Clientes
-    </h2>
     <a class="btn btn-success mb-4" href="/Clientes/Crear">
-        <i class="fas fa-plus"></i> Nuevo Cliente
+        <i class="fas fa-plus">Nuevo cliente</i> 
     </a>
 
     <div class="table-responsive">
@@ -33,16 +30,16 @@
                         <td>@customer.Id_cliente</td>
                         <td>@(customer.Primernombre + " " + customer.Apellidos)</td>
                         <td>@customer.Email</td>
-                        <td>@customer.Telefono</td>
-                        <td>@customer.Direccion</td>
-                        <td>@customer.Notas</td>
+                        <td>@customer.Telefono</td> 
+                        <td>@(string.IsNullOrEmpty(customer.Direccion) ? "Sin dirección" : customer.Direccion)</td>                      
+                        <td>@(string.IsNullOrEmpty(customer.Notas) ? "Sin notas" : customer.Notas)</td>                     
                         <td>@customer.Createdat</td>
                         <td style="white-space: nowrap">
                             <a class="btn btn-warning btn-sm me-2" href="/Clientes/Editar?id_usuaio=@customer.Id_cliente">
-                                <i class="fas fa-edit"></i> Editar
+                                <i class="fas fa-edit">Editar</i> 
                             </a>
                             <a class="btn btn-danger btn-sm" href="/Clientes/Eliminar?id=@customer.Id_cliente">
-                                <i class="fas fa-trash"></i> Eliminar
+                                <i class="fas fa-trash">Eliminar</i> 
                             </a>
                         </td>
                     </tr>
