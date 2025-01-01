@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CRUD Materiales\\CRUD Materiales.csproj": {}
+    "c:\\CRUD Materiales\\CRUD Materiales.csproj": {}
   },
   "projects": {
-    "C:\\CRUD Materiales\\CRUD Materiales.csproj": {
+    "c:\\CRUD Materiales\\CRUD Materiales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CRUD Materiales\\CRUD Materiales.csproj",
+        "projectUniqueName": "c:\\CRUD Materiales\\CRUD Materiales.csproj",
         "projectName": "CRUD Materiales",
-        "projectPath": "C:\\CRUD Materiales\\CRUD Materiales.csproj",
+        "projectPath": "c:\\CRUD Materiales\\CRUD Materiales.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\CRUD Materiales\\obj\\",
+        "outputPath": "c:\\CRUD Materiales\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
