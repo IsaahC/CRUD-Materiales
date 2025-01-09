@@ -1,4 +1,5 @@
 #Proyecto hecho por Elizalde Jaime Noe Alejandro
+
 Descripción del Proyecto
 Este proyecto es una aplicación web CRUD (Crear, Leer, Actualizar y Eliminar) para gestionar materiales de construcción. Está desarrollado utilizando ASP.NET Core con Razor Pages y está diseñado para facilitar el control de inventario y la gestión de materiales en tiendas de construcción.
 
